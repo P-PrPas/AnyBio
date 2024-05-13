@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="image/Icon.png">
+    <title>About - Any Bio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="home.html"><img src="image/logo2.png" class="logo"></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100011048683883">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <center>
+            <h1>เรามาทำความรู้จักกับ "Any Bio" กันดีกว่า <br> Let's get to know "Any Bio" better.</h1>
+        </center>
+
+    </div>
+    <div class="about">
+        <div class="content">
+            <div class="title">Any Bio คืออะไร?(What is Any Bio?)</div><br>
+            <p>Any Bio เป็นเว็บไซต์ที่ผมสร้างขึ้นสำหรับผู้ที่สนใจและต้องการศึกษาชีววิทยาไม่ว่าจะเป็นเด็กหรือผู้ใหญ่<br>(Any Bio is a website I created for people who are interested and want to study biology, whether they are young or old.)</p> <br>
+            <h1>การเรียนที่ Any Bio แตกต่างจากการเรียนในห้องอย่างไร?<br>(How is studying at Any Bio different from studying in a room?)</h1>
+            <p>การศึกษาในห้องเรียนก็เป็นตัวเลือกที่ดีแต่หากว่าแค่นั้นมันไม่พอสำหรับคุณล่ะ? คุณอาจจะต้องไปเรียนพิเศษซึ่งนั่นไม่ใช่ราคาถูกๆเลย ดังนั้น Any Bio จึงตอบโจทย์ข้อนี้ คุณสามารถศึกษาชีววิทยามากแค่ไหนก็ได้บนAny Bio และที่สำคัญ ทั้งหมดนั้นมันฟรี!! ดังนั้นคุณไม่จำเป็นจะต้องไปเสียเงินสำหรับค่าเรียนของคุณเลย
+                แต่หากคุณมีความประสงค์ที่จะสนับสนุนพวกเราคุณก็ทำได้ <br> <br>(Classroom education is a great option, but what if that's not enough for you? You may have to go for a special education, which is not cheap. Therefore, Any Bio answers this
+                question. You can study as much biology as you can on Any Bio and most importantly, it's FREE !! So you don't have to pay for your tuition at all. But if you want to support us, you can.)</p> <br>
+            <h1>แล้วเราจะสนับสนุน Any Bio ได้อย่างไร? (So how can we support Any Bio?)</h1>
+            <p>คุณสามารถหาคำตอบนี้ได้โดยการไปที่หน้าDonateของเว็ปไซต์เราหรือ <a href="donate.html">คลิ๊กที่นี่</a> <br> (You can find the answer by visiting the Donate page of our website or by <a href="donate.html"> clicking here</a>.)
+            </p>
+        </div>
+    </div>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <div id="footer">
+        <div class="container">
+            <center>
+                <p class="text-muted credit">Creat by <a href="https://www.facebook.com/peerapas68/">Peerapas</a> Group 6.</p>
+            </center>
+            <center class="anybio">
+                <p>AnyBIO &copy; 2021</p>
+            </center>
+        </div>
+
+    </div>
+</body>
+
+</html>
